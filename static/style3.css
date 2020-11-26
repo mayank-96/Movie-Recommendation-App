@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Blinker;
+    src: url(Fonts/Blinker/Blinker-Regular.ttf)
+}
+
+
+body {
+    background-color: black;
+    font-family: Blinker;
+}
+
+h1 {
+    font-size: 80px;
+    position: relative;
+    color: #5a37c3;
+    text-align: center;
+    top: 120px;
+    letter-spacing: 8px;
+}
+
+h2 {
+    font-size:30px;
+    position: relative;
+    color: whitesmoke;
+    text-align: center;
+    top: 120px;
+}
+
+
+
+
+:root {
+    --shadow: #2e2e2e;
+    --scrollbarBG: rgb(0, 0, 0);
+    --thumbBG: #2e2e2e;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px rgb(0, 0, 0);
+    
+  }
+  .side-scroll {
+    display: flex;
+    overflow: auto;
+    padding-bottom: 5px;
+  }
+  .side-scroll > div {
+    flex: 1;
+    margin-right: 20px;
+    flex: 0 0 100px;
+    height: 100px;
+    
+    background: #ccc;
+  }
+  .side-scroll::-webkit-scrollbar-thumb:horizontal {
+    background-color: var(--thumbBG);
+    box-shadow: -100vh 0 0 100vh var(--shadow), 0 0 15px 5px black;
+  }
+
+

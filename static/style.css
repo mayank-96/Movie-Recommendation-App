@@ -1,0 +1,251 @@
+@font-face {
+  font-family: Fondamento;
+  src: url(Fonts/Fondamento/Fondamento-Regular.ttf);
+}
+
+@font-face {
+  font-family: Blinker;
+  src: url(Fonts/Blinker/Blinker-Regular.ttf)
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(Fonts/Raleway/Raleway-Regular.ttf);
+}
+
+.logo{
+  position: relative;
+  text-align:center;
+  float: left;
+  padding-left: 5px;
+}
+
+
+body{
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header{
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 145px;
+    color: white;
+    font-family: Raleway;
+}
+ 
+form {
+    text-align: center;
+    font: 16px Arial; 
+    padding-top: 50px;
+}
+* {
+    box-sizing: border-box;
+  }
+
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 17px;
+    font-family: Blinker;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    background-color: #5a37c3;
+    color: whitesmoke;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #18224b;
+    color: whitesmoke;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #131834;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #dedede; 
+  }
+  
+  .autocomplete-active {
+    background-color: #fdc500 !important; 
+    color: whitesmoke; 
+  }
+
+.bottom-card {
+  position: relative;
+  background-color: transparent;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  font-family: Blinker;
+  top: 270px;
+  
+}
+
+.card-header {
+  color: white;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.card-text {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+#mySidenav{
+  background-color: #d4d4d4;
+}
+
+#vote {
+  position: absolute;
+  right: 270px;
+  transition: 0.5s;
+  padding: 10px;
+  width: 230px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 50px 50px 50px 50px;
+  top: 20px;
+  background-color: #de1b4a;
+  text-align: center;
+  font-family: Blinker;
+}
+
+#vote:hover {
+  background-color: white;
+  color: black;
+}
+
+
+#pop {
+  position: absolute;
+  right: 20px;
+  transition: 0.5s;
+  padding: 10px;
+  width: 230px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 50px 50px 50px 50px;
+  top: 20px;
+  background-color: #de1b4a;
+  text-align: center;
+  font-family: Blinker;
+}
+
+#pop:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
+
+
+:root {
+  --shadow: #2e2e2e;
+  --scrollbarBG: rgb(0, 0, 0);
+  --thumbBG: #2e2e2e;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+  
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px rgb(0, 0, 0);
+  
+}
+.side-scroll {
+  display: flex;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+.side-scroll > div {
+  flex: 1;
+  margin-right: 20px;
+  flex: 0 0 100px;
+  height: 100px;
+  
+  background: #ccc;
+}
+.side-scroll::-webkit-scrollbar-thumb:horizontal {
+  background-color: var(--thumbBG);
+  box-shadow: -100vh 0 0 100vh var(--shadow), 0 0 15px 5px black;
+}
+
+
+
+div#content {
+  display: none;
+  }
+
+div#loading {
+  top: 200 px;
+  margin: auto;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url(loader.gif) no-repeat;
+  cursor: wait;
+  }
+
+  hr {
+    border: 1px solid #f4e022;
+  }
+
+  #github{
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+    padding: 10px;
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    bottom: 40px;
+  }
+
+  #github:hover {
+    background-color: black;
+  }
