@@ -1,1 +1,2 @@
-# Movie-Recommendation-App---What-to-Watch
+# Movie Recommendation App
+## What to Watch
