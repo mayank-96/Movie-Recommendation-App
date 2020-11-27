@@ -229,6 +229,7 @@ div#loading {
 
   hr {
     border: 1px solid #f4e022;
+    background-color: #f4e022 ;
   }
 
   #github{
