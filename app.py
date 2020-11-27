@@ -5,8 +5,6 @@ import warnings
 warnings.filterwarnings('ignore')
 from scipy import spatial
 import operator
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
 import re
 from flask import Flask, render_template, request
 import random
