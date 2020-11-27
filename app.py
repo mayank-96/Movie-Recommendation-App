@@ -12,9 +12,9 @@ import random
 # MODEL
 
 # Import data
-data1 = pd.read_pickle('data1.pkl')
-data2 = pd.read_pickle('data2.pkl')
-movies = data1.append(data2)
+movies = pd.read_pickle('data1.pkl')
+# data2 = pd.read_pickle('data2.pkl')
+# movies = data1.append(data2)
 poster = pd.read_pickle('poster.pkl')
 
 result = pd.merge(movies, poster, how='left', on=['id'])
