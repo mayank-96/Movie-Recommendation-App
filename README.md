@@ -9,7 +9,7 @@ This application provides all the details of the requested movie such as subtitl
 
 ## Link to the application
 
-Check out the live demo: https://movieappwhattowatch.herokuapp.com/
+Check out the live demo: https://whattowatchmovie.herokuapp.com/
 
 ## Note
 
