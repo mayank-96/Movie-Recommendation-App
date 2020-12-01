@@ -12,14 +12,16 @@ import random
 # MODEL
 
 # Import data
-movies = pd.read_pickle('data1.pkl')
-# data2 = pd.read_pickle('data2.pkl')
-# movies = data1.append(data2)
+# Imported only first 500 rows due to data limit on heroku
+movies = pd.read_pickle('data500.pkl')
 poster = pd.read_pickle('poster.pkl')
 
 result = pd.merge(movies, poster, how='left', on=['id'])
 result['poster'] = result['poster'].fillna('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg')
 movies = result
+
+new_id = [*range(0,movies.shape[0])]
+movies['new_id']=new_id
 
 # Similarity function
 def Similarity(movieId1, movieId2):
